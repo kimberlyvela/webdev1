@@ -1,3 +1,29 @@
 body {
-    color: black;
+    background-image: url("https://previews.123rf.com/images/annettehyllested/annettehyllested1902/annettehyllested190200069/125089347-elegant-and-sleek-herringbone-repeat-vector-pattern-ideal-for-backgrounds-paper-textile-.jpg");
+    /* background-size: cover;*/
+    text-align: center;
 }
+
+header {
+    margin: 0;
+}
+
+main {
+    margin: 0;
+
+}
+
+footer {
+    margin: 0;
+
+}
+
+img {
+    height: 10rem;
+}
+
+/*.transparent-box {
+    position: fixed;
+    left: 0;
+    rgba(255, 183, 183, .5);
+}*/
