@@ -1,29 +1,76 @@
 body {
-    background-image: url("https://previews.123rf.com/images/annettehyllested/annettehyllested1902/annettehyllested190200069/125089347-elegant-and-sleek-herringbone-repeat-vector-pattern-ideal-for-backgrounds-paper-textile-.jpg");
-    /* background-size: cover;*/
+    background-image: url("https://t3.ftcdn.net/jpg/03/26/11/58/360_F_326115834_mLoiF4v29uqYcTa7mOQHbPEMU6BW4xng.jpg");
     text-align: center;
+    margin: 0 auto;
+    max-width: 150em;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    margin: 0;
+    height: 3rem;
 }
 
-main {
+h2 {
     margin: 0;
-
+    font-family: 'Norican', cursive;
+    font-size: 2rem;
+    text-align: center;
 }
 
-footer {
-    margin: 0;
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
+footer img {
+    position: fixed;
+    margin: auto;
+    bottom: 0rem;
+    right: 25%;
+    /*I don't know why I couldn't center it. I tried a lot of ways...*/
 }
 
 img {
     height: 10rem;
 }
 
-/*.transparent-box {
-    position: fixed;
-    left: 0;
-    rgba(255, 183, 183, .5);
-}*/
+a img {
+    border-color: #ff965ea7;
+    border-style: dashed;
+    border-width: .5em;
+}
+
+section {
+    background-color: rgba(255, 195, 158, 0.612);
+    margin: 2em auto;
+    margin-bottom: 10em;
+}
+
+ul {
+    margin-bottom: 10em;
+}
+
+div {
+    position: absolute;
+}
+
+.one {
+    left: 2.5rem;
+    top: 6rem;
+}
+
+.two {
+    right: 2.5rem;
+    top: 17rem;
+}
+
+.three {
+    left: 2.5rem;
+    bottom: 20rem;
+}
+
+.four {
+    right: 2.5rem;
+    bottom: .75rem;
+}
