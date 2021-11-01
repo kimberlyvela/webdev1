@@ -1,76 +1,79 @@
 body {
     background-image: url("https://t3.ftcdn.net/jpg/03/26/11/58/360_F_326115834_mLoiF4v29uqYcTa7mOQHbPEMU6BW4xng.jpg");
     text-align: center;
-    margin: 0 auto;
-    max-width: 150em;
+    margin: 0em;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font: 1rem 'Montserrat', sans-serif;
+    color: rgb(65, 25, 13)
 }
 
-header {
-    height: 3rem;
+section {
+    background-color: rgba(255, 199, 188, 0.689);
+    margin: 2em auto;
+    margin-bottom: 10em;
+    padding: 2em;
+}
+
+h1 {
+    font: 2.75rem 'Norican', cursive;
+    padding: 1em;
 }
 
 h2 {
     margin: 0;
-    font-family: 'Norican', cursive;
-    font-size: 2rem;
-    text-align: center;
-}
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-footer img {
-    position: fixed;
-    margin: auto;
-    bottom: 0rem;
-    right: 25%;
-    /*I don't know why I couldn't center it. I tried a lot of ways...*/
+    font: 2rem 'Norican', cursive;
 }
 
 img {
-    height: 10rem;
+    height: 15rem;
+    margin: 1rem 1rem;
 }
 
 a img {
-    border-color: #ff965ea7;
-    border-style: dashed;
-    border-width: .5em;
-}
-
-section {
-    background-color: rgba(255, 195, 158, 0.612);
-    margin: 2em auto;
-    margin-bottom: 10em;
+    border: #634a33 solid .25rem;
+    border-radius: 10%;
 }
 
 ul {
-    margin-bottom: 10em;
+    text-align: left;
+    margin: auto;
+}
+
+.him {
+    margin-bottom: 20em;
+}
+
+footer {
+    position: fixed;
+    margin: 0em;
+    bottom: 0em;
+    /*I don't know why I couldn't center it. I tried a lot of ways...*/
 }
 
 div {
     position: absolute;
 }
 
+div img {
+    height: 10em;
+}
+
 .one {
-    left: 2.5rem;
-    top: 6rem;
+    left: 5vw;
+    top: 11rem;
 }
 
 .two {
-    right: 2.5rem;
-    top: 17rem;
+    right: 5vw;
+    top: 27rem;
 }
 
 .three {
-    left: 2.5rem;
-    bottom: 20rem;
+    left: 5vw;
+    bottom: 108rem;
 }
 
 .four {
-    right: 2.5rem;
-    bottom: .75rem;
+    right: 10vw;
+    bottom: 4rem;
 }
