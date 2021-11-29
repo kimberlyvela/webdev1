@@ -9,16 +9,14 @@ body {
 }
 
 header {
-    /* background: green; */
     padding: 1.5em 0;
 }
 
 nav {
     align-items: center;
-    /* background: pink; */
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 0em;
     justify-content: space-between;
     max-width: 96%;
 }
@@ -27,7 +25,8 @@ a, a:hover {
     color:rgb(41, 41, 41);
     font-family: 'Roboto', sans-serif;
     font-size: .9rem;
-    letter-spacing: .2em;text-decoration: none;
+    letter-spacing: .2em;
+    text-decoration: none;
 }
 
 .title, .title:hover {
@@ -41,20 +40,32 @@ a, a:hover {
     gap: 2.5em;
 }
 
-main {
-    background: lightblue;
+.hamburger {
+    width: max-content;
+    display: none;
+}
+
+.patty {
+    width: 23px;
+    height: 1px;
+    background: rgb(41, 41, 41);
+    margin: 6px 0 ;
 }
 
 .gallery {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: .5em;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .hover-card {
   position: relative;
   display: grid;
+  height: 100%;
+  width: 1fr;
+  aspect-ratio: 3/2;;
 }
 
 .hover-card:hover .overlay {
@@ -64,8 +75,8 @@ main {
 .overlay {
   background: #fff;
   color: rgb(41, 41, 41);
-  font-size: 1rem;
   text-align: center;
+  letter-spacing: 0em;
 
   display: grid;
   opacity: 0;
@@ -77,23 +88,38 @@ main {
   bottom: 0;
   left: 0;
   
-  transition: all .25s;
+  transition: all .2s;
 }
 
 .hover-card img {
   display: grid;
-  height: auto;
-  max-width: 300px;
-}
-/* 
-@media (max-width: 769px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (max-with: 1025px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
+
+@media only screen and (max-width: 768px) {
+    .nav2 {
+        display: none;
     }
-} */
+    
+    .hamburger {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1050px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
