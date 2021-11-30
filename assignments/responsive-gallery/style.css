@@ -18,7 +18,7 @@ nav {
     flex-direction: row;
     gap: 0em;
     justify-content: space-between;
-    max-width: 96%;
+    max-width: 100%;
 }
 
 a, a:hover {
@@ -41,31 +41,35 @@ a, a:hover {
 }
 
 .hamburger {
-    width: max-content;
     display: none;
+    width: max-content;
+    
 }
 
 .patty {
-    width: 23px;
-    height: 1px;
     background: rgb(41, 41, 41);
-    margin: 6px 0 ;
+    height: 1px;
+    width: 23px;
+    margin: 6px 0;
+}
+
+main {
+    margin: 3%px 0;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: .5em;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    
 }
 
 .hover-card {
-  position: relative;
   display: grid;
   height: 100%;
   width: 1fr;
-  aspect-ratio: 3/2;;
+  position: relative;
+  aspect-ratio: 3/2;
 }
 
 .hover-card:hover .overlay {
@@ -95,16 +99,22 @@ a, a:hover {
   display: grid;
   height: 100%;
   width: 100%;
+
   object-fit: cover;
+  overflow: hidden;
   place-items: center;
   position: relative;
-  overflow: hidden;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav2 {
         display: none;
+    }
+
+    .title, .title:hover {
+        font-size: 1.2rem;
+        letter-spacing: 0em;;
     }
     
     .hamburger {
@@ -117,9 +127,14 @@ a, a:hover {
     
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1050px) {
+@media (max-width: 1050px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
+}
+    
+@media (min-width: 1051px) {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
 }
