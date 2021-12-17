@@ -6,15 +6,24 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(75, 38, 29);
 }
 
 main {
     margin: 0 auto;
+    margin-top: 8.5rem;
     max-width: 1000px;
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
 .entries {
-    margin: 0 7%;
+    margin: 0 auto;
 }
 
 .entry {
@@ -29,12 +38,15 @@ h3 {
 }
 
 img {
-    width: 100%;
-    max-width: 700px;
+    display: block;
+    margin: 0 auto;
     margin-top: 2em;
+    max-height: 800px;
+    max-width: 100%;
+    text-align: center;
+
     border-radius: 30px;
     transition: all .1s;
-    text-align: center;
 }
 
 img:hover {
@@ -45,4 +57,24 @@ img:hover {
 .img {
     display: block;
     text-align: center;
+}
+
+.imagery1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.imagery2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .imagery2 {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
 }
