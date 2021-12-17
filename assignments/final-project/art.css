@@ -17,8 +17,12 @@ main {
     max-width: 1000px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .gallery {
-    margin: 0 auto;
+    margin: 2em auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
