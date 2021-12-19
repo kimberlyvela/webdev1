@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(75, 38, 29);
@@ -14,28 +13,36 @@ body {
 main {
     margin: 0 auto;
     margin-top: 8.5rem;
-    max-width: 1000px;
+    max-width: 1080px;
 }
 
 h2 {
     text-align: center;
+    margin: 0 7%;
 }
 
 .gallery {
-    margin: 2em auto;
+    margin: 2em 7%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
-    width: 100%;
 }
 
 .pic {
     aspect-ratio: 1/1;
     overflow: hidden;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 img {
     max-height: 900px;
     place-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 }
